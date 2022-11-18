@@ -12,11 +12,11 @@ const About = () => {
     <div id='about' className=" overflow-hidden flex justify-center lg:mt-20">
       <div className="flex flex-col lg:flex-row w-full max-w-md sm:max-w-xl md:max-w-2xl lg:max-w-screen-lg xl:max-w-screen-xl items-center  overflow-hidden">
       <Image
-            className="w-80 md:w-96 lg:w-[100%] lg:mb-40"
+            className="w-80 md:w-96 lg:w-1/2 lg:mb-40"
             src={aboutIllustration}
             alt="Learning computer gif"
           />
-        <div className="flex flex-col w-full text-justify gap-3 px-4">
+        <div className="flex flex-col w-1/2 text-justify gap-3 px-4">
           <h2 className=" text-6xl text-center sm:text-7xl lg:text-left lg:text-8xl xl:text-9xl font-bold text-blue-600">
             About Me
           </h2>
