@@ -24,14 +24,14 @@ const Hero = () => {
         <div className="flex flex-col w-full px-4">
           <h2 className=" text-6xl sm:text-7xl lg:text-8xl xl:text-9xl font-bold text-blue-600">
             Hello, <br />
-            I'm Maciek
+            I&apos;m Maciek
           </h2>
           <h1 className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-blue-600">
             I am a designer, developer and a big fan of new technologies.
             <br />
             <span className="font-bold">
               {" "}
-              Let's create something awesome together!
+              Let&apos;s create something awesome together!
             </span>
           </h1>
           <div className="flex gap-2 mt-4">

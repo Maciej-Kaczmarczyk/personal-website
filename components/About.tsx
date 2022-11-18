@@ -21,9 +21,9 @@ const About = () => {
             About Me
           </h2>
           <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-blue-600">
-            My name is Maciek Kaczmarczyk and I'm a creative
+            My name is Maciek Kaczmarczyk and I&apos;m a creative
             person based in Poland. My main goal is just to create
-            awesome things. Now I'm 20 years old but since 14 
+            awesome things. Now I&apos;m 20 years old but since 14 
             I have already tried graphic design, video editing,  and
             3D modelling. Since last year I have been mainly focused
             on UI/UX designing and frontend development. My greatest
