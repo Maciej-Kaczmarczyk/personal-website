@@ -54,7 +54,7 @@ const Contact = () => {
               className="w-full bg-blue-600 text-white text-base font-semibold py-2 
               rounded-full uppercase hover:bg-opacity-0 border-2 mt-5 border-blue-600 hover:text-blue-600 transition duration-200 ease-in-out"
             >
-              Download CV
+              Send message
             </button>
           </div>
         </div>
