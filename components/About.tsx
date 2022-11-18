@@ -16,7 +16,7 @@ const About = () => {
             src={aboutIllustration}
             alt="Learning computer gif"
           />
-        <div className="flex flex-col w-1/2 text-justify gap-3 px-4">
+        <div className="flex flex-col w-full lg:w-1/2 text-justify gap-3 px-4">
           <h2 className=" text-6xl text-center sm:text-7xl lg:text-left lg:text-8xl xl:text-9xl font-bold text-blue-600">
             About Me
           </h2>
