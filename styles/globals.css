@@ -6,11 +6,32 @@
 
 
 
-
 :root{
   font-family: 'Signika', sans-serif;
   background: rgb(240,242,244);
   background: linear-gradient(90deg, rgba(240,242,244,1) 0%, rgba(171,205,255,1) 100%);
+  
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(37 99 235);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 
 

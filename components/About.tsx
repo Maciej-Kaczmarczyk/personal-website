@@ -21,12 +21,12 @@ const About = () => {
             About Me
           </h2>
           <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-blue-600">
-            My name is Maciek Kaczmarczyk and I&apos;m a creative
+            My name is <span className=' font-bold'>Maciek Kaczmarczyk</span> and I&apos;m a creative
             person based in Poland. My main goal is just to create
             awesome things. Now I&apos;m 20 years old but since 14 
-            I have already tried graphic design, video editing,  and
-            3D modelling. Since last year I have been mainly focused
-            on UI/UX designing and frontend development. My greatest
+            I have already tried <span className=' font-bold'>graphic design, video editing,  and
+            3D modelling</span>. Since last year I have been mainly focused
+            on <span className=' font-bold'>UI/UX</span> designing and <span className=' font-bold'>frontend development</span>. My greatest
             asset is that I love to learn new things and technologies. 
           </p>
           <div className="flex justify-center lg:justify-start gap-2">
