@@ -1,8 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import colibreLogo from "../assets/colibreLogo.png";
-import axeConcept from "../assets/axe.png";
-import interiorRender from "../assets/interiorRender.png";
 
 const Projects = () => {
   return (
@@ -20,10 +18,10 @@ const Projects = () => {
                 <Image src={colibreLogo} className="w-full h-full rounded-3xl " alt="Coliber Logo Project" />
             </div>
             <div className="w-full md:w-96 h-fit aspect-[1/1] rounded-3xl hover:scale-110 duration-200 hover:cursor-pointer hover:bg-blue-600 before:flex before:justify-center before:items-center before:absolute before:rounded-3xl before:opacity-[90%] before:duration-200 hover:before:w-full hover:before:h-full hover:before:bg-blue-600 hover:before:content-['SEE_MORE'] before:text-white">
-                <Image src={axeConcept} className="w-full h-full rounded-3xl " alt="Coliber Logo Project" />
+                <Image src={colibreLogo} className="w-full h-full rounded-3xl " alt="Coliber Logo Project" />
             </div>
             <div className="w-full md:w-96 h-fit aspect-[1/1] rounded-3xl hover:scale-110 duration-200 hover:cursor-pointer hover:bg-blue-600 before:flex before:justify-center before:items-center before:absolute before:rounded-3xl before:opacity-[90%] before:duration-200 hover:before:w-full hover:before:h-full hover:before:bg-blue-600 hover:before:content-['SEE_MORE'] before:text-white">
-                <Image src={interiorRender} className="w-full h-full rounded-3xl " alt="Coliber Logo Project" />
+                <Image src={colibreLogo} className="w-full h-full rounded-3xl " alt="Coliber Logo Project" />
             </div>
 
           </div>
