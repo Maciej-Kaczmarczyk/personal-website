@@ -9,7 +9,7 @@ import cloud2 from "../assets/cloud2.svg";
 
 const About = () => {
   return (
-    <div className=" overflow-hidden flex justify-center lg:mt-20">
+    <div id='about' className=" overflow-hidden flex justify-center lg:mt-20">
       <div className="flex flex-col lg:flex-row w-full max-w-md sm:max-w-xl md:max-w-2xl lg:max-w-screen-lg xl:max-w-screen-xl items-center  overflow-hidden">
       <Image
             className="w-80 md:w-96 lg:w-full lg:mb-40"

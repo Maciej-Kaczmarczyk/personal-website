@@ -8,7 +8,7 @@ import Image from 'next/image'
 
 const Hero = () => {
   return (
-    <div className=" overflow-hidden flex justify-center lg:mt-20">
+    <div id="hero" className=" overflow-hidden flex justify-center lg:mt-20">
       <div className="flex flex-col lg:flex-row-reverse w-full max-w-md sm:max-w-xl md:max-w-2xl lg:max-w-screen-lg xl:max-w-screen-xl items-center  overflow-hidden">
         <div className="relative w-full h-60 lg:h-fit lg:flex justify-end ">
           <Image
