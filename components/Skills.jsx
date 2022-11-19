@@ -2,7 +2,7 @@ import React from 'react'
 
 const Skills = () => {
   return (
-    <div className=" overflow-hidden flex justify-center mt-20 lg:mt-10">
+    <div id='skills' className=" overflow-hidden flex justify-center mt-20 lg:mt-10">
     <div className="flex flex-col lg:flex-row w-full max-w-md sm:max-w-xl md:max-w-2xl lg:max-w-screen-lg xl:max-w-screen-xl items-center  overflow-hidden px-4">
         <div className='flex flex-col gap-12 justify-center items-center w-full h-fit bg-blue-600 rounded-[40px] lg:rounded-[60px] p-6 lg:p-10'>
             <div className='flex flex-col items-center gap-5 lg:gap-10'>

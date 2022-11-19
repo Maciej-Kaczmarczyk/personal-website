@@ -4,7 +4,7 @@ import { useAutoAnimate } from "@formkit/auto-animate/react";
 import cloud1 from "../assets/cloud1.svg";
 import Image from "next/image";
 import { Link, animateScroll as scroll } from "react-scroll";
-import { disablePageScroll, enablePageScroll } from 'scroll-lock';
+import { disablePageScroll, enablePageScroll } from "scroll-lock";
 
 const Navbar = () => {
   const [animate] = useAutoAnimate();
@@ -17,7 +17,13 @@ const Navbar = () => {
   return (
     <div ref={animate} className="md:bg-blue-600 z-10 sticky top-0">
       <div className="flex justify-end md:justify-center py-5">
-        <div className="md:hidden" onClick={() => {toggleNavbar(); disablePageScroll()}}>
+        <div
+          className="md:hidden"
+          onClick={() => {
+            toggleNavbar();
+            disablePageScroll();
+          }}
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -36,17 +42,17 @@ const Navbar = () => {
         <div className="hidden sticky md:flex items-center justify-between px-10 lg:px-4 w-full md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl text-lg font-semibold text-white">
           <div>
             <ul className="flex gap-8">
-            <Link
+              <Link
                 activeClass="active"
-                to="about"
+                to="hero"
                 spy={true}
                 smooth={true}
-                offset={-120}
+                offset={-200}
                 duration={800}
               >
-              <li className="hover:text-blue-300 hover:cursor-pointer duration-200 ease-in-out">
-                Home
-              </li>
+                <li className="hover:text-blue-300 hover:cursor-pointer duration-200 ease-in-out">
+                  Home
+                </li>
               </Link>
               <Link
                 activeClass="active"
@@ -56,25 +62,55 @@ const Navbar = () => {
                 offset={-120}
                 duration={800}
               >
-              <li className="hover:text-blue-300 hover:cursor-pointer duration-200 ease-in-out">
-                About
-              </li>
+                <li className="hover:text-blue-300 hover:cursor-pointer duration-200 ease-in-out">
+                  About
+                </li>
               </Link>
-              <li className="hover:text-blue-300 hover:cursor-pointer duration-200 ease-in-out">
-                Portfolio
-              </li>
+              <Link
+                activeClass="active"
+                to="skills"
+                spy={true}
+                smooth={true}
+                offset={-300}
+                duration={800}
+              >
+                <li className="hover:text-blue-300 hover:cursor-pointer duration-200 ease-in-out">
+                  Skills
+                </li>
+              </Link>
+              <Link
+                activeClass="active"
+                to="portfolio"
+                spy={true}
+                smooth={true}
+                offset={-200}
+                duration={800}
+              >
+                <li className="hover:text-blue-300 hover:cursor-pointer duration-200 ease-in-out">
+                  Portfolio
+                </li>
+              </Link>
             </ul>
           </div>
           <div>
             <ul className="flex items-center gap-8">
-              <li className="hover:text-blue-300 hover:cursor-pointer duration-200 ease-in-out">
-                <button
-                  className="w-fit border-2 border-white text-white text-sm font-semibold py-1 px-4
+              <Link
+                activeClass="active"
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={-200}
+                duration={800}
+              >
+                <li className="hover:text-blue-300 hover:cursor-pointer duration-200 ease-in-out">
+                  <button
+                    className="w-fit border-2 border-white text-white text-sm font-semibold py-1 px-4
               rounded-full uppercase hover:bg-white hover:text-blue-600 transition duration-200 ease-in-out"
-                >
-                  Contact
-                </button>
-              </li>
+                  >
+                    Contact
+                  </button>
+                </li>
+              </Link>
               <li className="hover:text-blue-300 hover:cursor-pointer transition-all">
                 <a
                   href="https://www.linkedin.com/in/maciejkaczmarczyk01/"
@@ -123,7 +159,13 @@ const Navbar = () => {
       </div>
       {navbar ? (
         <div className="md:hidden flex flex-col bg-blue-700 w-full h-[100vh] absolute top-0 overflow-hidden">
-          <div className="flex justify-end" onClick={() => {toggleNavbar(); enablePageScroll()}}>
+          <div
+            className="flex justify-end"
+            onClick={() => {
+              toggleNavbar();
+              enablePageScroll();
+            }}
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -141,23 +183,91 @@ const Navbar = () => {
           </div>
           <div className=" pt-20">
             <ul className="flex flex-col items-center text-center text-xl text-white gap-6">
-              <li className="w-fit hover:text-blue-300 hover:cursor-pointer transition-all">
-                Home
-              </li>
-              <li className="w-fit hover:text-blue-300 hover:cursor-pointer transition-all">
-                About
-              </li>
-              <li className="w-fit hover:text-blue-300 hover:cursor-pointer transition-all">
-                Portfolio
-              </li>
-              <li className="w-fit hover:text-blue-300 hover:cursor-pointer transition-all">
-                <button
-                  className="w-52 border-2 border-white text-white text-base font-semibold py-2 
+              <Link
+                activeClass="active"
+                to="hero"
+                spy={true}
+                smooth={true}
+                offset={-200}
+                duration={800}
+                onClick={() => {
+                  toggleNavbar();
+                  enablePageScroll();
+                }}
+              >
+                <li className="w-fit hover:text-blue-300 hover:cursor-pointer transition-all">
+                  Home
+                </li>
+              </Link>
+              <Link
+                activeClass="active"
+                to="about"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={800}
+                onClick={() => {
+                  toggleNavbar();
+                  enablePageScroll();
+                }}
+              >
+                <li className="w-fit hover:text-blue-300 hover:cursor-pointer transition-all">
+                  About
+                </li>
+              </Link>
+              <Link
+                activeClass="active"
+                to="skills"
+                spy={true}
+                smooth={true}
+                offset={-40}
+                duration={800}
+                onClick={() => {
+                  toggleNavbar();
+                  enablePageScroll();
+                }}
+              >
+                <li className="w-fit hover:text-blue-300 hover:cursor-pointer transition-all">
+                  Skills
+                </li>
+              </Link>
+              <Link
+                activeClass="active"
+                to="portfolio"
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={800}
+                onClick={() => {
+                  toggleNavbar();
+                  enablePageScroll();
+                }}
+              >
+                <li className="w-fit hover:text-blue-300 hover:cursor-pointer transition-all">
+                  Portfolio
+                </li>
+              </Link>
+              <Link
+                activeClass="active"
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={-200}
+                duration={800}
+                onClick={() => {
+                  toggleNavbar();
+                  enablePageScroll();
+                }}
+              >
+                <li className="w-fit hover:text-blue-300 hover:cursor-pointer transition-all">
+                  <button
+                    className="w-52 border-2 border-white text-white text-base font-semibold py-2 
               rounded-full uppercase hover:bg-blue-600 hover:text-white transition duration-200 ease-in-out"
-                >
-                  Contact
-                </button>
-              </li>
+                  >
+                    Contact
+                  </button>
+                </li>
+              </Link>
             </ul>
             <ul className="flex gap-8 justify-center text-xl text-white pt-12">
               <li className="w-fit hover:text-blue-300 hover:cursor-pointer transition-all">

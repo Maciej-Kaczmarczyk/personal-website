@@ -4,7 +4,7 @@ import colibreLogo from "../assets/colibreLogo.png";
 
 const Projects = () => {
   return (
-    <div id="about" className=" overflow-hidden flex justify-center my-20 lg:mt-44">
+    <div id="portfolio" className=" overflow-hidden flex justify-center my-20 lg:mt-44">
       <div className="flex flex-col lg:flex-row w-full max-w-md sm:max-w-xl md:max-w-2xl lg:max-w-screen-lg xl:max-w-screen-xl items-center  overflow-hidden">
 
         <div className="flex flex-col gap-10 w-full justify-center items-center px-4">
